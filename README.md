@@ -1,13 +1,13 @@
 # 📄 Structured Data Extraction from PDFs using RAG
 
-Extract clean, validated, structured data from unstructured PDF documents — powered by a Retrieval-Augmented Generation (RAG) pipeline, LLM-based schema extraction, and a custom-built UI. Fully containerized and deployable with Docker.
+Extract clean, validated, structured data from unstructured PDF documents powered by a Retrieval-Augmented Generation (RAG) pipeline, LLM-based schema extraction, and a custom-built UI. Fully containerized and deployable with Docker.
 
 
 ---
 
 ## 🚀 Overview
 
-Traditional LLM prompting on long, unstructured PDFs is prone to hallucination and inconsistent output formats. This project solves that by combining **retrieval-grounded generation** with **schema-validated extraction**, so the system pulls information *from* the source document rather than guessing — and returns it in a predictable, structured format instead of free text.
+Traditional LLM prompting on long, unstructured PDFs is prone to hallucination and inconsistent output formats. This project solves that by combining **retrieval-grounded generation** with **schema-validated extraction**, so the system pulls information *from* the source document rather than guessing and returns it in a predictable, structured format instead of free text.
 
 Built end-to-end: ingestion → chunking → embedding → retrieval → schema-constrained extraction → custom UI → Docker deployment.
 
@@ -15,11 +15,11 @@ Built end-to-end: ingestion → chunking → embedding → retrieval → schema-
 
 ## ✨ Key Features
 
-- **Grounded extraction, not hallucination** — Answers and extracted fields are tied back to actual chunks retrieved from the source document.
-- **Schema-validated output** — Extracted data is validated against a defined schema (e.g., Pydantic models) instead of relying on raw LLM text, so downstream systems get consistent, structured data (e.g., tabular / JSON) every time.
-- **Vector-based retrieval** — Documents are chunked and embedded into a vector store for fast, relevant context retrieval at query time.
-- **Custom UI** — Built a UI from scratch (beyond any reference implementation) for uploading PDFs, triggering extraction, and reviewing structured results in a clean, usable interface.
-- **Containerized deployment** — Packaged with Docker for reproducible setup and one-command deployment, independent of local environment quirks.
+- **Grounded extraction, not hallucination** - Answers and extracted fields are tied back to actual chunks retrieved from the source document.
+- **Schema-validated output** - Extracted data is validated against a defined schema (e.g., Pydantic models) instead of relying on raw LLM text, so downstream systems get consistent, structured data (e.g., tabular / JSON) every time.
+- **Vector-based retrieval** - Documents are chunked and embedded into a vector store for fast, relevant context retrieval at query time.
+- **Custom UI** -  Built a UI from scratch (beyond any reference implementation) for uploading PDFs, triggering extraction, and reviewing structured results in a clean, usable interface.
+- **Containerized deployment** - Packaged with Docker for reproducible setup and one-command deployment, independent of local environment quirks.
 
 ---
 
@@ -117,6 +117,6 @@ docker run -p 8501:8501 --env-file .env pdf-rag-extractor
 
 ## 🙋 About
 
-Built by **Keerthana Bammidi** — Computer Science undergraduate exploring applied GenAI, RAG systems, and full-stack development.
+Built by **Keerthana Bammidi** - Computer Science undergraduate exploring applied GenAI, RAG systems, and full-stack development.
 
 [Email](mailto:bammidikeerthana8@gmail.com)
