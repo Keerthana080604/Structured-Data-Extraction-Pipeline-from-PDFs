@@ -1,0 +1,15 @@
+.env
+.env.*
+!.env.example
+
+myenv/
+venv/
+.venv/
+
+__pycache__/
+*.pyc
+
+.ipynb_checkpoints/
+
+vectorstore/
+vectorstore_chroma/
